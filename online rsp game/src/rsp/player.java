@@ -1,16 +1,17 @@
 package rsp;
 
+// 플레이어 인터페이스
 public interface player {
 	
 	int rock = 0;
 	int sissor = 1;
 	int paper = 2;
 
-	String[] rspList = {"Rock","Sissor","Paper"};
+	String[] rspList = {"Rock","Sissor","Paper"}; // 위 정수형 값과 인덱싱 해주기위해 string 배열 선언
 	
-	public Hand getHand();
-	public void setHand(String hand);
-	public void setHand();
-	public int whichWin(player player);
-	public int getUid();
+	public Hand getHand(); // hand 형 값 가져오기
+	public void setHand(String hand); // hand 세팅
+	public void setHand(); // 랜덤으로 hand 세팅
+	public int whichWin(player player); // 플레이어 중 이긴사람의 uid 리턴
+	public int getUid(); // uid 가져오기
 }
