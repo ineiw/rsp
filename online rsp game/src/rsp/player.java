@@ -7,7 +7,7 @@ public interface player {
 	int sissor = 1;
 	int paper = 2;
 
-	String[] rspList = {"Rock","Sissor","Paper"}; // 위 정수형 값과 인덱싱 해주기위해 string 배열 선언
+	String[] rspList = {"바위","가위","보"}; // 위 정수형 값과 인덱싱 해주기위해 string 배열 선언
 	
 	public Hand getHand(); // hand 형 값 가져오기
 	public void setHand(String hand); // hand 세팅
